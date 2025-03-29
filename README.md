@@ -20,7 +20,17 @@ Key tasks:
 
 ## 🌐 Part 2: Climate API (Flask App)
 
-A RESTful API was built using Flask to serve climate data using clean, reusable query logic in `sql_helper.py`.
+In Part 2, the analysis from the notebook is transformed into a fully functional RESTful API using Flask. The API connects to the same SQLite database and serves climate data through various well-structured routes.
+
+A custom `SQLHelper` class is used to organize all database query logic and promote clean, modular code. Each route uses a method from this helper class to access and return relevant data as JSON.
+
+The API provides endpoints for:
+- Recent precipitation data
+- List of weather observation stations
+- Temperature observations from the most active station
+- Min, max, and average temperature stats from a given start date or date range
+
+This design allows users to programmatically access historical weather data from Honolulu, Hawaii.
 
 ---
 
