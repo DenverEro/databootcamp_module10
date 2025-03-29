@@ -61,4 +61,4 @@ A RESTful API was built using Flask to serve climate data using clean, reusable 
 
 ## ✍️ Author
 
-[Seven G] 
+[Seven G](https://github.com/DenverEro)  
