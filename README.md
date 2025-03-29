@@ -22,12 +22,18 @@ Key tasks:
 
 A RESTful API was built using Flask to serve climate data using clean, reusable query logic in `sql_helper.py`.
 
-### 🚀 How to Run the App
+---
 
-1. Install required packages:
+## 🔗 Available API Routes
 
-```bash
-pip install flask sqlalchemy pandas
+| Route | Description |
+|-------|-------------|
+| `/` | Welcome route with list of endpoints |
+| `/api/v1.0/precipitation` | Last 12 months of precipitation data (date: prcp) |
+| `/api/v1.0/stations` | List of all station IDs |
+| `/api/v1.0/tobs` | Last 12 months of temperature observations from the most active station |
+| `/api/v1.0/<start>` | Min, avg, and max temperature from start date to end |
+| `/api/v1.0/<start>/<end>` | Min, avg, and max temperature for given date range |
 
 ---
 
